@@ -15,12 +15,12 @@ async def on_ready():
 
 
 @client.event
-async def on_massage(massage):
+async def on_message(message):
     if message.author == client.user:
         return
 
-    if massage.content.startswith("!hello"):
-        await massage.channel.send("Hello")
+    if message.content.startswith("!hello"):
+        await message.channel.send("Hello")
 
 
 

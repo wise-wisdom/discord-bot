@@ -11,7 +11,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.command()
-async def 오늘뭐먹지(ctx):
+async def 밥(ctx):
     food_options = [
         "지지고",
         "프랭크버거",
